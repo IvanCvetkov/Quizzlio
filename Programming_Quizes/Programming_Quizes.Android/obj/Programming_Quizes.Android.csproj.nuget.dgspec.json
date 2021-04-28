@@ -1,0 +1,252 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.Android\\Programming_Quizes.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.Android\\Programming_Quizes.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.Android\\Programming_Quizes.Android.csproj",
+        "projectName": "Programming_Quizes.Android",
+        "projectPath": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.Android\\Programming_Quizes.Android.csproj",
+        "packagesPath": "C:\\Users\\ivan-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ivan-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.csproj": {
+                "projectPath": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Syncfusion.Xamarin.SfNavigationDrawer": {
+              "target": "Package",
+              "version": "[18.1.0.44, )"
+            },
+            "ThriveGmbH.BottomNavigationBar.XF": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Xam.Plugin.SimpleAudioPlayer": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Xam.Plugins.TextToSpeech": {
+              "target": "Package",
+              "version": "[4.0.0.7, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991265, )"
+            },
+            "Xamarin.Forms.InputKit": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Xamarin.GooglePlayServices.Ads.Lite": {
+              "target": "Package",
+              "version": "[71.1720.4, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.csproj",
+        "projectName": "Programming_Quizes",
+        "projectPath": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes.csproj",
+        "packagesPath": "C:\\Users\\ivan-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivan-\\OneDrive\\Desktop\\Programming_Quizes\\Programming_Quizes\\Programming_Quizes\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ivan-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "CarouselView.FormsPlugin": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "MagicGradients": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Syncfusion.Xamarin.SfNavigationDrawer": {
+              "target": "Package",
+              "version": "[18.1.0.44, )"
+            },
+            "System.CodeDom": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.2, )"
+            },
+            "Xam.Plugin.SimpleAudioPlayer": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Xam.Plugins.TextToSpeech": {
+              "target": "Package",
+              "version": "[4.0.0.7, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991265, )"
+            },
+            "Xamarin.Forms.InputKit": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.1.0.714, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="Programming_Quizes.Quizzes.SecondStr.ThirdQuestion">
+    <ScrollView>
+        <StackLayout Margin="25,50,25,0">
+            <Frame BorderColor="Black">
+                <FlexLayout Direction="Column" JustifyContent="SpaceEvenly" Wrap="Wrap" VerticalOptions="FillAndExpand">
+                    <Label Text="The Substring() method is used for:" TextColor ="Black" FontSize="Title" HorizontalTextAlignment="Center"/>
+                    <BoxView HeightRequest="1" Margin="0,0,0,0" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand" />
+                    <input:RadioButtonGroupView>
+                        <input:RadioButton x:Name="wrongOption2" Text="Deleting a substring"/>
+                        <input:RadioButton x:Name="wrongOption1" Text="Adding a set of characters to the string"/>
+                        <input:RadioButton x:Name="wrongOption3" Text="Getting the length of the string"/>
+                        <input:RadioButton x:Name="rightOption" Text="Getting the string after the given index"/>
+                    </input:RadioButtonGroupView>
+                </FlexLayout>
+            </Frame>
+            <Button x:Name="cntnBtn" VerticalOptions="EndAndExpand" Margin="0,0,0,30" Text="Continue" Clicked="cntnBtn_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Programming_Quizes"
+             mc:Ignorable="d"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"  
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:ads="clr-namespace:Programming_Quizes.Controls" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Programming_Quizes.MainPage" NavigationPage.HasNavigationBar="false" ControlTemplate="{StaticResource PageWithGradient}" BackgroundColor="Transparent">
+
+    <StackLayout>
+        <!--#bc91d7-->
+        <yummy:PancakeView x:Name="pancakeView" BackgroundColor="DeepSkyBlue"   
+                           CornerRadius="0,0,60,60"
+                           HorizontalOptions="FillAndExpand" 
+                           HeightRequest="200">
+            <Label x:Name="mainText" Text="Welcome to Quizzlio" 
+                   FontFamily="{x:OnPlatform Android='Droid Sans Mono'}"
+                   TextType="Text"
+                   FontSize="Title"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Welcome To Quizzlio&#x0a;"/>
+                        <Span Text="&#x0a;"/>
+                        <Span Text="          The C# quiz app" FontSize="Large"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </yummy:PancakeView>
+
+        <forms:AnimationView
+                    x:Name="mainAnim"
+                    Animation="people.json" 
+                    WidthRequest="150"
+                    HeightRequest="250"
+                    Margin="0,50,0,0"
+                    AutoPlay="True" Loop="True"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" />
+        
+
+        <Button x:Name="cntBtn" VerticalOptions="EndAndExpand" BackgroundColor="DeepSkyBlue" Text="Continue" WidthRequest="40" HeightRequest="50" Margin="20,0,20,20" Clicked="splashBtn_Clicked"></Button>
+    </StackLayout>
+</ContentPage>

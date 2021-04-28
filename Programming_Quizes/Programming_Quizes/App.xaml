@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:magicGradients="clr-namespace:MagicGradients;assembly=MagicGradients"
+             mc:Ignorable="d"
+             x:Class="Programming_Quizes.App">
+    <Application.Resources>
+        <Color x:Key="LabelPrimary">White</Color>
+
+        <Style TargetType="Button" ApplyToDerivedTypes="True">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="BackgroundColor" Value="DodgerBlue" />
+        </Style>
+        <Style TargetType="Frame">
+            <!--5190ED-->
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="HasShadow" Value="True"/>
+            <Setter Property="CornerRadius" Value="50"/>
+            <Setter Property="HeightRequest" Value="450"/>
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource LabelPrimary}"/>
+        </Style>
+
+        <ControlTemplate x:Key="PageWithGradient">
+            <Grid>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:LinearGradient Angle="320">
+                            <magicGradients:GradientStop Color="#338af9" Offset="0" />
+                            <magicGradients:GradientStop Color="#2ff8ff" Offset="1" />
+                        </magicGradients:LinearGradient>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <ContentPresenter />
+            </Grid>
+        </ControlTemplate>
+
+
+    </Application.Resources>
+</Application>

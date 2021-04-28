@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             x:Class="Programming_Quizes.Quizzes.State.IntroFailed">
+    <ContentPage.Content>
+        <StackLayout Margin="25,0,25,25" Padding="0,0,0,0">
+            <forms:AnimationView 
+                x:Name="tryagain"
+                Margin="0,120,0,0"
+	            Animation="tryagain.json" 
+	            Loop="False" 
+	            AutoPlay="True"
+	            VerticalOptions="FillAndExpand" 
+	            HorizontalOptions="FillAndExpand" />
+            <Button x:Name="cntnBtn" Text="Continue" Clicked="cntnBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

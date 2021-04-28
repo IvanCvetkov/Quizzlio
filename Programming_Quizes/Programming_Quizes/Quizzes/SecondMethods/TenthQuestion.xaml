@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             x:Class="Programming_Quizes.Quizzes.SecondMethods.TenthQuestion">
+    <ScrollView>
+        <StackLayout Margin="25,50,25,0">
+            <Frame BorderColor="Black">
+                <FlexLayout Direction="Column" JustifyContent="SpaceEvenly" Wrap="Wrap" VerticalOptions="FillAndExpand">
+                    <Label TextColor ="Black" FontSize="Title" HorizontalTextAlignment="Start">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="if first = 5 and second = 10:&#x0a;&#x0a;" FontSize="20" TextColor="Black"/>
+                                <Span Text="int " FontSize="20" TextColor="Blue"/>
+                                <Span Text="Sum(" FontSize="20" TextColor="Black"/>
+                                <Span Text="int " FontSize="20" TextColor="Blue"/>
+                                <Span Text="first, " FontSize="20" TextColor="Black"/>
+                                <Span Text="int " FontSize="20" TextColor="Blue"/>
+                                <Span Text="second)" FontSize="20" TextColor="Black"/>
+                                <Span Text="{}&#x0a;{ &#x0a;" FontSize="20" TextColor="Black"/>
+                                <Span Text="    int " FontSize="20" TextColor="Blue"/>
+                                <Span Text="sum = 0;&#x0a;" FontSize="20" TextColor="Black"/>
+                                <Span Text="    for" FontSize="20" TextColor="Blue"/>
+                                <Span Text="(" FontSize="20" TextColor="Black"/>
+                                <Span Text="int " FontSize="20" TextColor="Blue"/>
+                                <Span Text="i = first; " FontSize="20" TextColor="Black"/>
+                                <Span Text="i &gt; 0; " FontSize="20" TextColor="Black"/>
+                                <Span Text="i--)" FontSize="20" TextColor="Black"/>
+                                <Span Text="{}&#x0a;{ &#x0a;" FontSize="20" TextColor="Black"/>
+                                <Span Text="    sum+=second;" FontSize="20" TextColor="Black"/>
+                                <Span Text="{}&#x0a;}" FontSize="20" TextColor="Black"/>
+                                <Span Text="&#x0a;return " FontSize="20" TextColor="Blue"/>
+                                <Span Text="sum;" FontSize="20" TextColor="Black"/>
+                                <Span Text="{}&#x0a;}" FontSize="20" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView HeightRequest="1" Margin="0,0,0,0" BackgroundColor="LightGray" HorizontalOptions="CenterAndExpand" />
+                    <input:RadioButtonGroupView>
+                        <input:RadioButton x:Name="wrongOption3" Text="40"/>
+                        <input:RadioButton x:Name="rightOption" Text="50"/>
+                        <input:RadioButton x:Name="wrongOption1" Text="60"/>
+                        <input:RadioButton x:Name="wrongOption2" Text="Error"/>
+                    </input:RadioButtonGroupView>
+                </FlexLayout>
+            </Frame>
+            <Button x:Name="cntnBtn" VerticalOptions="EndAndExpand" Margin="0,0,0,30" Text="Continue" Clicked="cntnBtn_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

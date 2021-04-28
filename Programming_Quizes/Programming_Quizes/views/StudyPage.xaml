@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Programming_Quizes.views.StudyPage">
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <!--5190ED-->
+            <Setter Property="BackgroundColor" Value="CornflowerBlue"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="HeightRequest" Value="300"/>
+            <Setter Property="WidthRequest" Value="250"/>
+            <Setter Property="BorderColor" Value="Black"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="HeightRequest" Value="60"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+        </Style>
+
+    </ContentPage.Resources>
+    <ScrollView Orientation="Both">
+        <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceAround" VerticalOptions="FillAndExpand">
+
+                <Frame x:Name="CSharpDef" HasShadow="True" BorderColor ="Transparent" HeightRequest="200" WidthRequest="250">
+                    <Grid BackgroundColor="Transparent">
+                        <Label HorizontalOptions="CenterAndExpand" FontSize="Title" FontAttributes="Italic" Text="What is C#"/>
+                        <ImageButton CornerRadius="120" VerticalOptions="End" BorderColor="Black" HeightRequest="110" Clicked="ImageButton_Clicked"
+                                 WidthRequest="250" HorizontalOptions="Start" BackgroundColor="Transparent" 
+                                 Source="ic_intro_black_48dp">
+                        </ImageButton>
+                    </Grid>
+                </Frame>
+
+
+
+
+            <Frame HeightRequest="1000" Margin="0,0,0,-150" WidthRequest="300" BorderColor="Transparent" BackgroundColor="Transparent">
+                <FlexLayout Direction="Column" Wrap="Wrap">
+                    <Button x:Name="definitions" Margin="0,10,0,5" Text="Definitions"></Button>
+                    <Button x:Name="progLang" Text="◄ Programming Language" TextColor="Black" BorderColor="black" BackgroundColor="#E8E8E8" Clicked="progLang_Clicked"></Button>
+                    <Button x:Name="OOP" HeightRequest="70" Text="◄ OOP (Object-Oriented Programming Language)" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="OOP_Clicked"></Button>
+                    <Button x:Name="DotNETFramework" Text="◄ .NET Framework" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="DotNETFramework_Clicked"></Button>
+                    <Button x:Name="clr" HeightRequest="70" Text="◄ CLR (Common Language Runtime)" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="clr_Clicked"></Button>
+                    <Button x:Name="cls" HeightRequest="70" Text="◄ CLS (Common Language Specification)" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="cls_Clicked"></Button>
+                    <Button x:Name="cts" HeightRequest="70" Text="◄ CTS (Common Type System)" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="cts_Clicked"></Button>
+                    <Button x:Name="MSIL" HeightRequest="70" Text="◄ MSIL (MS Intermediate Language)" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="MSIL_Clicked"></Button>
+                    <Button x:Name="JIT" Text="◄ JIT (Just-in-Time Compiler)" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="JIT_Clicked"></Button>
+                    <Button x:Name="Compiler" Text="◄ C# Compiler" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Compiler_Clicked"></Button>
+                    <Button x:Name="SourceCode" Text="◄ Source code" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="SourceCode_Clicked"></Button>
+                    <Button x:Name="ExecutableCode" Text="◄ Executable code" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="ExecutableCode_Clicked"></Button>
+                </FlexLayout>
+            </Frame>
+            <BoxView x:Name="boxview1" HeightRequest="1" Margin="0,0,0,20" WidthRequest="300" BackgroundColor="Black" HorizontalOptions="Center" />
+            <Frame HeightRequest="1150" WidthRequest="300" Margin="0,-30,0,-85" BorderColor="Transparent" BackgroundColor="Transparent">
+                <FlexLayout Direction="Column" Wrap="Wrap">
+                    <Button x:Name="generalProgTerms" Margin="0,10,0,5" HeightRequest="70" Text="General Programming Terms"></Button>
+                    <Button x:Name="Variables" Text="◄ Variables" TextColor="Black" BorderColor="black" BackgroundColor="#E8E8E8" Clicked="Variables_Clicked"></Button>
+                    <Button x:Name="DataType" Text="◄ DataTypes " TextColor="Black" BackgroundColor="#E8E8E8" Clicked="DataType_Clicked"></Button>
+                    <Button x:Name="Keywords" Text="◄ Keywords" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Keywords_Clicked"></Button>
+                    <Button x:Name="Operators" Text="◄ Operators" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Operators_Clicked"></Button>
+                    <Button x:Name="Expression" Text="◄ Expressions" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Expression_Clicked"></Button>
+                    <Button x:Name="TypeCasting" Text="◄ Type-Casting" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="TypeCasting_Clicked"></Button>
+                    <Button x:Name="Arrays" Text="◄ Arrays" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Arrays_Clicked"></Button>
+                    <Button x:Name="Function" Text="◄ Functions" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Function_Clicked"></Button>
+                    <Button x:Name="Class" Text="◄ Classes" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Class_Clicked"></Button>
+                    <Button x:Name="Object" Text="◄ Objects" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Object_Clicked"></Button>
+                    <Button x:Name="Constructor" Text="◄ Constructor" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Constructor_Clicked"></Button>
+                    <Button x:Name="Destructor" Text="◄ Destructor" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Destructor_Clicked"></Button>
+                    <Button x:Name="Namespaces" Text="◄ Namespace" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Namespaces_Clicked"></Button>
+                    <Button x:Name="Exceptions" Text="◄ Exceptions" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Exceptions_Clicked"></Button>
+                    <Button x:Name="ExceptionHandling" Text="◄ Exception Handling" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="ExceptionHandling_Clicked"></Button>
+                </FlexLayout>
+            </Frame>
+            <BoxView  x:Name="boxview2" HeightRequest="1" Margin="0,0,0,20" WidthRequest="300" BackgroundColor="Black" HorizontalOptions="Center" />
+            <Frame HeightRequest="1000" WidthRequest="300" Margin="0,-30,0,-50" BorderColor="Transparent" BackgroundColor="Transparent">
+                <FlexLayout Direction="Column" Wrap="Wrap">
+                    <Button x:Name="oopProgTerms" Margin="0,10,0,5" HeightRequest="70" Text="Object-Oriented Programming Terms"></Button>
+                    <Button x:Name="Inheritance" Text="◄ Inheritance" TextColor="Black" BorderColor="black" BackgroundColor="#E8E8E8" Clicked="Inheritance_Clicked"></Button>
+                    <Button x:Name="BaseClass" HeightRequest="70" Text="◄ Base Class" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="BaseClass_Clicked"></Button>
+                    <Button x:Name="DerivedClass" Text="◄ Derived Class" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="DerivedClass_Clicked"></Button>
+                    <Button x:Name="AbstractClass" Text="◄ Abstract Class" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="AbstractClass_Clicked"></Button>
+                    <Button x:Name="MultilevelInheritance" Text="◄ Multilevel Inheritance" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="MultilevelInheritance_Clicked"></Button>
+                    <Button x:Name="HierarchicalInheritance" Text="◄ Hierarchical Inheritance" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="HierarchicalInheritance_Clicked"></Button>
+                    <Button x:Name="SingleInheritance" Text="◄ Single Inheritance" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="SingleInheritance_Clicked"></Button>
+                    <Button x:Name="Interface" Text="◄ Interface" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Interface_Clicked"></Button>
+                    <Button x:Name="Polymorphism" Text="◄ Polymorphism" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Polymorphism_Clicked"></Button>
+                    <Button x:Name="Overriding" Text="◄ Overriding" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Overriding_Clicked"></Button>
+                    <Button x:Name="Encapsulation" Text="◄ Encapsulation" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Encapsulation_Clicked"></Button>
+                    <Button x:Name="Abstraction" Text="◄ Abstraction" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Abstraction_Clicked"></Button>
+                    <Button x:Name="Overloading" Text="◄ Overloading" TextColor="Black" BackgroundColor="#E8E8E8" Clicked="Overloading_Clicked"></Button>
+                </FlexLayout>
+            </Frame>
+        </FlexLayout>
+    </ScrollView>
+
+</ContentPage>

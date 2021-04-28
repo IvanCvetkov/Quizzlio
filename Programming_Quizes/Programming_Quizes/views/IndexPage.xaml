@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients" 
+             xmlns:ads="clr-namespace:Programming_Quizes.Controls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+            xmlns:views="clr-namespace:Programming_Quizes.views"
+             mc:Ignorable="d"
+             x:Class="Programming_Quizes.views.IndexPage"
+             d:NavigationPage.HasNavigationBar="False" BackgroundColor="Transparent">
+
+
+    <!--<ScrollView>
+        <StackLayout Padding="0,0,0,0">
+            <BoxView HeightRequest="1" Margin="0,0,0,50" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+            <Frame HasShadow="True" BorderColor="Black" CornerRadius="120" BackgroundColor="Transparent" HorizontalOptions="Center" HeightRequest="70" WidthRequest="70">
+                <Grid BackgroundColor="Transparent">
+                    <ImageButton  HeightRequest="120" WidthRequest="120" BackgroundColor="Transparent" Source="CSharp.png">
+                        <ImageButton.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </ImageButton.GestureRecognizers>
+                    </ImageButton>
+                </Grid>
+            </Frame>
+            <Frame HasShadow="True" BackgroundColor="Transparent" HeightRequest="70" WidthRequest="70">
+                <Grid BackgroundColor="Transparent">
+                    <ImageButton CornerRadius="120" BorderColor="Black" HeightRequest="120" WidthRequest="120" HorizontalOptions="Start" BackgroundColor="Transparent" Source="CSharp.png">
+                        <ImageButton.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </ImageButton.GestureRecognizers>
+                    </ImageButton>
+                    <ImageButton CornerRadius="120" BorderColor="Black" HeightRequest="120" WidthRequest="120" HorizontalOptions="End" BackgroundColor="Transparent" Source="CSharp.png">
+                        <ImageButton.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </ImageButton.GestureRecognizers>
+                    </ImageButton>
+                </Grid>
+            </Frame>
+            <ads:AdControlView BackgroundColor="Red" HeightRequest="90" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ScrollView>-->
+
+    
+    
+    
+    <!--<Frame x:Name="intro" HasShadow="True">
+        <FlexLayout Direction="Column">
+            <ImageButton Source="ic_calculate_white_48dp" HorizontalOptions="End" Clicked="vrImg_Clicked"/>
+        </FlexLayout>
+    </Frame>-->
+   
+    
+    
+    <ContentPage.Resources>
+
+        <Style TargetType="BoxView">
+            <Setter Property="HeightRequest" Value="100"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Frame">
+            <!--5190ED-->
+            <Setter Property="BackgroundColor" Value="#FFE303"/>
+            <Setter Property="CornerRadius" Value="300"/>
+            <Setter Property="HeightRequest" Value="160"/>
+            <Setter Property="WidthRequest" Value="100"/>
+            <Setter Property="BorderColor" Value="Black"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="WidthRequest" Value="140"/>
+            <Setter Property="BackgroundColor" Value="cornflowerblue"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HeightRequest" Value="140"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+            <Setter Property="CornerRadius" Value="300"/>
+            <Setter Property="BorderColor" Value="cornflowerblue"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="ContentLayout" Value="Top"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="Padding" Value="30"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+
+    </ContentPage.Resources>
+    <ScrollView Orientation="Vertical">
+        <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceAround" VerticalOptions="FillAndExpand">
+            <BoxView HeightRequest="1" Margin="0,0,0,0" WidthRequest="900" BackgroundColor="Black" HorizontalOptions="Center" />
+
+            <Button x:Name="introOneBtn" ImageSource="ic_intro_black_48dp" Text="Intro 1" Clicked="IntroOne_Clicked"/>
+            <Button x:Name="introTwoBtn" ImageSource="ic_intro_black_48dp" Text="Intro 2" Clicked="introTwoBtn_Clicked"/>
+            <Button x:Name="variablesBtn" ImageSource="ic_calculate_white_48dp" Text="Variables" Clicked="variablesBtn_Clicked"/>
+
+            <!--Separator with color-->
+            <BoxView HeightRequest="1" Margin="0,0,0,20" WidthRequest="900" BackgroundColor="LightGray" HorizontalOptions="Center" />
+
+
+            <Button x:Name="strFirst"  ImageSource="strings_48dp" Text="Strings[0]" Clicked="strFirst_Clicked"/>
+            <Button x:Name="strSecond" ImageSource="strings_48dp" Text="Strings[1]" Clicked="strSecond_Clicked"/>
+            <Button  x:Name="arrays" ImageSource="arrays_48dp" Text="Arrays" Clicked="arrays_Clicked"/>
+            
+            <!--Separator without color (dropdown separator)-->
+            <BoxView HeightRequest="1" Margin="0,0,0,-0" WidthRequest="900" BackgroundColor="Transparent" HorizontalOptions="Center" />
+            <Button  x:Name="arraysAdvanced" ImageSource="arrays_48dp" FontSize="11" Text="Arrays Advanced" Clicked="arraysAdvanced_Clicked"/>
+            
+            
+            <BoxView HeightRequest="1" Margin="0,30,0,0" WidthRequest="900" BackgroundColor="LightGray" HorizontalOptions="Center" />
+            
+            <Button  HeightRequest="110" WidthRequest="300" Margin="0,40,0,0" FontAttributes="Italic" FontSize="Title" BackgroundColor="Transparent" 
+                     TextColor="Black" BorderColor="Transparent" Text="Methods"/>
+            <BoxView HeightRequest="1" Margin="0,0,0,-0" WidthRequest="900" BackgroundColor="Transparent" HorizontalOptions="Center" />
+            
+            <Button  x:Name="methodsFirst" ImageSource="developer_mode_48dp" Text="Part 1" Clicked="methodsFirst_Clicked"/>
+            <Button  x:Name="methodsSecond" ImageSource="developer_mode_48dp" Text="Part 2" Clicked="methodsSecond_Clicked"/>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.0" package="com.app.quizzlio" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="29" />
+	<application android:label="Quizzlio" android:icon="@drawable/splashlogo">
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5262128722831196~4145410405" />
+		<activity android:name="com.hidetitlebar.MainActivity" android:theme="@android:style/Theme.NoTitleBar" />
+	</application>
+</manifest>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ads="clr-namespace:Programming_Quizes.Controls"
+             mc:Ignorable="d"
+             x:Class="Programming_Quizes.views.AboutPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="HorizontalOptions" Value="Start"/>
+        </Style>
+        <Style TargetType="Frame">
+            <!--5190ED-->
+            <Setter Property="BackgroundColor" Value="#007FFF"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="HeightRequest" Value="250"/>
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+
+            <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" WidthRequest="900" BackgroundColor="Black"/>
+
+            <Label Margin="15" HorizontalOptions="Center" Text="What will I learn?&#x0a;" FontSize="Title"/>
+            <Image Source="coding.png" WidthRequest="60" HeightRequest="45" IsVisible="True" HorizontalOptions="CenterAndExpand"></Image>
+            <Label Text="&#x0a;• Learn the basics of C# programming"/>
+            <Label Text="• Learn the fundamentals of the C# programming language"/>
+            <Label Text="• Learn lots of other interesting things with our quizzes and studying section&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;"/>
+
+            <Label Margin="15" HorizontalOptions="Center" Text="Why should I learn C#?&#x0a;" FontSize="Title"/>
+            <Image Source="developer_mode_48dp" WidthRequest="60" HeightRequest="45" IsVisible="True" HorizontalOptions="CenterAndExpand"></Image>
+            <Label Text="&#x0a;• C# is a popular programming language used for various different types of applications&#x0a;"/>
+            <Label Text="• Web Development"/>
+            <Label Text="• Windows Development"/>
+            <Label Text="• Mobile Development&#x0a;&#x0a;&#x0a;&#x0a;"/>
+
+
+            <ImageButton Source="splashlogo.png" BackgroundColor="Transparent"></ImageButton>
+
+            <!--<Frame Margin="20,0,20,0" BackgroundColor="White" HasShadow="True" HeightRequest="70">
+                <FlexLayout>
+                    <Button ImageSource="ic_star_half_black_36dp" Text="Help us improve our mobile application" Clicked="Button_Clicked" BackgroundColor="Transparent" TextColor="Black">
+                    </Button>
+                </FlexLayout>
+                </Frame>
+            
+                <ads:AdControlView BackgroundColor="Red" HeightRequest="90" HorizontalOptions="FillAndExpand"/>
+            -->
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
