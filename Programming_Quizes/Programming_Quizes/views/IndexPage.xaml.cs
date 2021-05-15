@@ -1,19 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SQLite;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Dapper;
-using MySql.Data.MySqlClient;
-using Programming_Quizes.Controls;
 using Programming_Quizes.Database;
 using Programming_Quizes.Quizzes.FirstIntro;
-using Programming_Quizes.Scripts;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using static Programming_Quizes.App;
 
 namespace Programming_Quizes.views
 {
@@ -51,7 +43,7 @@ namespace Programming_Quizes.views
 
             Button[] btns = { introOneBtn, introTwoBtn, variablesBtn,
                 strFirst, strSecond,arrays, arraysAdvanced, methodsFirst,
-                methodsSecond };
+                methodsSecond, classesFirst, classesSecond };
             List<BtnToDb> btnList = new List<BtnToDb>();
 
             for (int i = 1; i <= btns.Length; i++)
@@ -83,6 +75,8 @@ namespace Programming_Quizes.views
                 var seventhBtn = context.Buttons.First(a => a.Id == 7);
                 var eighthBtn = context.Buttons.First(a => a.Id == 8);
                 var ninthBtn = context.Buttons.First(a => a.Id == 9);
+                var tenthBtn = context.Buttons.First(a => a.Id == 10);
+                var eleventhBtn = context.Buttons.First(a => a.Id == 11);
 
                 if (firstBtn.DoneBefore == true)
                 {
@@ -129,6 +123,16 @@ namespace Programming_Quizes.views
                     methodsSecond.BackgroundColor = Color.LightGreen;
                     methodsSecond.BorderColor = Color.LightGreen;
                 }
+                if (tenthBtn.DoneBefore == true)
+                {
+                    classesFirst.BackgroundColor = Color.LightGreen;
+                    classesFirst.BorderColor = Color.LightGreen;
+                }
+                if (eleventhBtn.DoneBefore == true)
+                {
+                    classesSecond.BackgroundColor = Color.LightGreen;
+                    classesSecond.BorderColor = Color.LightGreen;
+                }
             }
 
             ResetNavigationStack();
@@ -160,7 +164,7 @@ namespace Programming_Quizes.views
              arraysAdvanced.FadeTo(1, 500));
 
 
-            if (App.adCheck == 1) { }
+            // if (App.adCheck == 1) { }
             // NavigateToAdPage();
 
             //Color color = Color.FromHex("#5DFC0A");
@@ -211,6 +215,16 @@ namespace Programming_Quizes.views
         private async void methodsSecond_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new Quizzes.SecondMethods.FirstQuestion());
+        }
+
+        private async void classesFirst_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Quizzes.Classes.First.QuestionOne());
+        }
+
+        private async void classesSecond_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Quizzes.Classes.Second.FirstQuestion());
         }
     }
 }
