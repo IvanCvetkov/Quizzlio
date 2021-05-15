@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -24,6 +24,7 @@
     </NavigationPage>-->
 
     <views:IndexPage Title="Home" IconImageSource="ic_home_black_24dp"/>
+    <views:AchievementsPage Title="Achievements" IconImageSource="ic_emoji_events_yellow_light_48dp"/>
     <views:StudyPage Title="Study" IconImageSource="ic_menu_book_black_24dp"/>
     <views:AboutPage Title="About" IconImageSource="ic_question_answer_black_24dp"/>
 
