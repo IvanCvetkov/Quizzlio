@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Programming_Quizes.views.AchievementsPage">
+    <ContentPage.Resources>
+
+        <Style TargetType="BoxView">
+            <Setter Property="HeightRequest" Value="100"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Frame">
+            <!--5190ED-->
+            <Setter Property="WidthRequest" Value="220"/>
+            <Setter Property="BackgroundColor" Value="cornflowerblue"/>
+            <Setter Property="HeightRequest" Value="220"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BorderColor" Value="cornflowerblue"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="Padding" Value="30"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="WidthRequest" Value="140"/>
+            <Setter Property="BackgroundColor" Value="cornflowerblue"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HeightRequest" Value="140"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BorderColor" Value="cornflowerblue"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="ContentLayout" Value="Top"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ScrollView Orientation="Vertical">
+        <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceAround" VerticalOptions="FillAndExpand">
+            <Frame x:Name="firstQuizFrame">
+                <Button x:Name="FirstQuiz" ImageSource="ic_emoji_events_yellow_light_48dp" Text="First Quiz Finished" Clicked="FirstQuiz_Clicked"/>
+            </Frame>
+            <Frame x:Name="fiveQuizFrame" Margin="0, 0, 0, 80">
+                <Button x:Name="FiveQuizesFinished" ImageSource="ic_emoji_events_yellow_light_48dp" Text="Five Quizes Finished" Clicked="FiveQuizesFinished_Clicked"/>
+            </Frame>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>
